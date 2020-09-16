@@ -11,7 +11,6 @@ import Posts from "./Posts";
 
 class Users extends Component {
   componentDidMount() {
-    console.log(this.props);
     const { fetchAllUsersList } = this.props;
     fetchAllUsersList();
   }

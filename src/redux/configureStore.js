@@ -7,12 +7,12 @@ const configureStore = (initalState) => {
   const composeEnhancer =
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-  const middlewarList = [thunk, reduxImmutableStateInvariant()];
+  const middlewareList = [thunk, reduxImmutableStateInvariant()];
 
   return createStore(
     rootReducer,
     initalState,
-    composeEnhancer(applyMiddleware(...middlewarList))
+    composeEnhancer(applyMiddleware(...middlewareList))
   );
 };
 
